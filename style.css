@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+header {
+    background: #1A4B79;
+    color: #FFFFFF;
+    padding: 0 16px;
+    width: calc(100% - 32px)
+}
+
+header .content__img img{
+    margin: 0;
+    padding: 10px 0;
+    width: 250px;
+}
+
+header .content{
+    justify-content: space-between;
+    max-width: 1280px;
+    padding-right: 8px;
+}
+
+header h1{
+    margin: 16px 0;
+    display: none;
+}
+
+header .content i{
+    border: solid #FFFFFF;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin: 0 8px;
+}
+
+header .content p{
+    margin: 0;    
+}
+header .content img{
+    margin: 0 16px;
+}
+header .content .category{
+    margin: 0 16px;
+}
+
+header a{
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+.body{
+    padding: 8px;
+}
+.body .body__row{
+    padding: 8px;
+    justify-content: center;
+}
+
+.body .body__content{
+    float: left;
+    padding: 8px;
+    width: 50%
+}
+.body .body__content .content__box{
+    background: #C4C4C4;
+    width: 100%;
+}
+.body .body__row .row__box .box__description{
+    background: #F2F2F2;
+    padding: 8px;
+    padding-top: 0;
+}
+.body .body__row .row__box .box__description .title{
+    color: #454545;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 37px;
+    margin: 0;
+}
+.body .body__row .row__box .box__description .subtitle{
+    color: #1A4B79;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0;
+}
+
+.body .body__row .row__box .box__description .description{
+    color: #454545;
+    font-weight: normal;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.align-center{
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 600px){
+    header{
+        max-width: 100%;
+        padding: 0;
+        width: 100%;
+    }
+    header .content{
+        padding: 0;
+        width: fit-content;
+    }
+    header .content .content__menu{
+        display: none
+    }
+    header .content .content__img{
+        justify-content: center;
+    }
+    header .content .content__img img{
+        margin: 0;
+        width: 80%;
+    }
+    .body .body__row{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+    .body .body__row .row__box{
+        margin: 25px 0;
+        padding: 0;
+        width: 100%;
+    }
+    footer{
+        background: #1A4B79;
+        color: #FFFFFF;
+        left: 0;
+        margin: 0;
+        padding: 8px;
+        right: 0;
+    }
+    footer .content__about-us{
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    footer .content__social-media{
+        padding: 25px 0;
+    }
+
+    footer .content__social-media img{
+        margin-right: 32px;
+    }
+
+    footer .content__social-media p{
+        margin-bottom: 10px;
+    }
+    footer .about__development{
+        margin: 0;
+        text-align: right;
+    }
+
+}
