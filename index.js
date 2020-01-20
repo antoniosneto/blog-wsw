@@ -9,13 +9,12 @@ function getArticles(cards) {
         const thisString = cardTemplate(cards[i]);
         string += thisString;
     }
-    createComponent(string, ".body");
+    createComponent(string, ".body__content");
 }
 
 function cardTemplate(card) {
-    return `<div class="body__content">
-        <div class="content__box">
-            <div class="box__img">
+    return `<div class="content__box">
+            <div class="box__img align-center">
                 <img src="${card.img.src}" alt="${card.img.alt}">
             </div>
             <div class="box__description">
@@ -23,26 +22,26 @@ function cardTemplate(card) {
                 <p class="subtitle">${card.article.subtitle}</p>
                 <p class="description">${card.article.description}</p>
             </div>
-        </div>
-    </div>`;
+        </div>`;
 }
 
 const footer = `
-    <div class="footer__content">
+    <div class="footer__content row">
         <p class="content__about-us"><strong>Sobre nós: </strong>Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa. Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa. Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa.</p>
-        <div class="content__social-media">
-            <p><strong>SIGA-NOS NAS REDES SOCIAIS</strong></p>
-            <div class="row">
-                <img src="./assets/instagram.svg" alt="">
-                <img src="./assets/linkedin.svg" alt="">
+        <div class="content__right">
+            <div class="content__social-media">
+                <p><strong>SIGA-NOS NAS REDES SOCIAIS</strong></p>
+                <div class="social-media__img row">
+                    <img src="./assets/instagram.svg" alt="">
+                    <img src="./assets/linkedin.svg" alt="">
+                </div>
             </div>
+            <p class="about__development"><small>Desenvolvido por: <strong>HD4</strong></small></p>
         </div>
-        <p class="about__development"><small>Desenvolvido por: <strong>HD4</strong></small></p>
     </div>`;
 
-const header = `<header class="align-center">
-    <div class="content row">
-        <div class="content__img row">
+const header = `<div class="content row">
+        <div class="content__img align-center">
             <img src="./assets/logo-work-sweet-home.png" alt="logo da work sweet work">
             <h1>work sweet work</h1>
         </div>
@@ -55,8 +54,7 @@ const header = `<header class="align-center">
             <img src="./assets/instagram.svg" alt="nosso instagram">
             <img src="./assets/linkedin.svg" alt="nosso linkedin">
         </div>
-    </div>
-</header>`;
+    </div>`;
 
 const cards = [
     {
