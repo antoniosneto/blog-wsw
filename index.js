@@ -3,28 +3,6 @@ function createComponent(stringHtml, selector) {
     div.innerHTML = stringHtml;
 }
 
-function getArticles(cards) {
-    let string = "";
-    for (i in cards) {
-        const thisString = cardTemplate(cards[i]);
-        string += thisString;
-    }
-    createComponent(string, ".body__content");
-}
-
-function cardTemplate(card) {
-    return `<div class="content__box">
-            <div class="box__img align-center">
-                <img src="${card.img.src}" alt="${card.img.alt}">
-            </div>
-            <div class="box__description">
-                <h2 class="title">${card.article.title}</h2>
-                <p class="subtitle">${card.article.subtitle}</p>
-                <p class="description">${card.article.description}</p>
-            </div>
-        </div>`;
-}
-
 const footer = `
     <div class="footer__content row">
         <p class="content__about-us"><strong>Sobre nós: </strong>Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa. Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa. Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa.</p>
@@ -56,61 +34,5 @@ const header = `<div class="content row">
         </div>
     </div>`;
 
-const cards = [
-    {
-        img: {
-            src: "",
-            alt: "Imagem a ser exibida"
-        },
-        article: {
-            title: "Blog de viagens, vamos!",
-            subtitle: "Blog de viagens, vamos fazer.",
-            description:
-                "Blog de viagens, vamos fazer alguma coisa bem legal !, Blog de lugar viagens, vamos fazer alguma coisa bem legal ! ,Blog de viagens, vamos fazer alguma coisa bem legal, Blog de viagens, vamos fazer alguma coisa bem lega... ",
-            author: "Agathe 15/12"
-        }
-    },
-    {
-        img: {
-            src: "",
-            alt: "Imagem a ser exibida"
-        },
-        article: {
-            title: "Blog de viagens, vamos!",
-            subtitle: "Blog de viagens, vamos fazer.",
-            description:
-                "Blog de viagens, vamos fazer alguma coisa bem legal !, Blog de lugar viagens, vamos fazer alguma coisa bem legal ! ,Blog de viagens, vamos fazer alguma coisa bem legal, Blog de viagens, vamos fazer alguma coisa bem lega... ",
-            author: "Agathe 15/12"
-        }
-    },
-    {
-        img: {
-            src: "",
-            alt: "Imagem a ser exibida"
-        },
-        article: {
-            title: "Blog de viagens, vamos!",
-            subtitle: "Blog de viagens, vamos fazer.",
-            description:
-                "Blog de viagens, vamos fazer alguma coisa bem legal !, Blog de lugar viagens, vamos fazer alguma coisa bem legal ! ,Blog de viagens, vamos fazer alguma coisa bem legal, Blog de viagens, vamos fazer alguma coisa bem lega... ",
-            author: "Agathe 15/12"
-        }
-    },
-    {
-        img: {
-            src: "",
-            alt: "Imagem a ser exibida"
-        },
-        article: {
-            title: "Blog de viagens, vamos!",
-            subtitle: "Blog de viagens, vamos fazer.",
-            description:
-                "Blog de viagens, vamos fazer alguma coisa bem legal !, Blog de lugar viagens, vamos fazer alguma coisa bem legal ! ,Blog de viagens, vamos fazer alguma coisa bem legal, Blog de viagens, vamos fazer alguma coisa bem lega... ",
-            author: "Agathe 15/12"
-        }
-    }
-];
-
 createComponent(header, "header");
 createComponent(footer, "footer");
-getArticles(cards);
