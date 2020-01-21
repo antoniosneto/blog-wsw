@@ -3,6 +3,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
+    width: 100%;
 }
 
 header {
@@ -76,18 +77,26 @@ footer .footer__content {
     width: 100%;
 }
 
+footer .footer__content .content__left {
+    width: 70%;
+}
+
+footer .footer__content .content__left img {
+    width: 365px;
+}
+
 footer .footer__content .content__about-us {
     font-size: 16px;
     margin: 0;
-    width: 70%;
 }
 
 footer .footer__content .content__right {
     float: right;
+    margin-top: 100px;
 }
 
 footer .footer__content .content__social-media img {
-    margin-right: 32px;
+    margin-left: 32px;
 }
 
 footer .footer__content .content__right .content__social-media p {
@@ -99,11 +108,12 @@ footer
     .content__right
     .content__social-media
     .social-media__img {
+    float: right;
     margin: 10px 0;
 }
 footer .footer__content .content__right .about__development {
     margin: 0;
-    margin-top: 50px;
+    padding-top: 100px;
     text-align: right;
 }
 
@@ -114,6 +124,10 @@ footer .footer__content .content__right .about__development {
 .align-center {
     align-items: center;
     justify-content: center;
+}
+
+.mobile {
+    display: none;
 }
 
 @media (max-width: 600px) {
@@ -148,5 +162,37 @@ footer .footer__content .content__right .about__development {
 
     footer .footer__content .content__social-media {
         padding: 25px 0;
+    }
+
+    footer .footer__content .content__left {
+        width: 100%;
+    }
+    footer .footer__content .content__right {
+        margin-top: 50px;
+    }
+
+    footer .footer__content .content__left img {
+        width: 80%;
+    }
+    footer
+        .footer__content
+        .content__right
+        .content__social-media
+        .social-media__img {
+        float: unset;
+    }
+
+    footer .footer__content .content__social-media img {
+        margin-right: 32px;
+        margin-left: 0;
+    }
+    footer .footer__content .content__right .about__development {
+        padding-top: 50px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
     }
 }

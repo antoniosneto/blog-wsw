@@ -1,8 +1,130 @@
-.body{
+.body {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 1280px;
+}
+.body .body__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 1160px;
+    padding: 50px 0;
+    width: 100%;
 }
 
-.body img{
-    
+.body .body__content img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.body .body__content .body__title {
+    max-width: 1000px;
+    margin: 16px 0;
+}
+
+.body .body__content .body__title h1 {
+    font-size: 32px;
+    line-height: 44px;
+    margin: 0;
+}
+
+.body .body__content .body__title p {
+    color: #1a4b79;
+    font-size: 20px;
+    line-height: 27px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.body .body__content .body__body {
+    max-width: 1000px;
+    padding: 5px 0;
+}
+
+.body .body__content .body__body p {
+    color: #454545;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.body .body__content .body__body ol {
+    list-style: inside;
+    list-style-type: decimal;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.body .body__content .body__body ol li {
+    font-weight: 700;
+    margin-top: 32px;
+}
+.body .body__content .body__body ol li:first-child {
+    margin: 0;
+}
+
+.body .body__content .body__body ol p {
+    margin: 0;
+}
+
+.body .body__content .body__button button {
+    background: #00a468;
+    border-radius: 8px;
+    border: 0;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 50px 0;
+    padding: 24px 60px;
+}
+
+.body .body__content .body__footer {
+    max-width: 1000px;
+    margin: 32px 0;
+    text-align: right;
+    width: 100%;
+}
+
+.body .body__content .body__footer p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #454545;
+}
+
+.body .body__content .body__footer p span {
+    margin-left: 32px;
+}
+
+.body .body__content .body__more {
+    margin: 0;
+    margin-top: 48px;
+    width: 100%;
+}
+
+.body .body__content .body__more p {
+    color: #454545;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: bold;
+}
+
+.body .body__content .body__title h1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@media (max-width: 600px) {
+    .body {
+        padding: 8px;
+        width: calc(100% - 16px);
+    }
+    .body .body__content .body__button button {
+        background: #00a468;
+        border-radius: 8px;
+        border: 0;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 50px 0;
+        padding: 24px 60px;
+    }
 }

@@ -5,7 +5,10 @@ function createComponent(stringHtml, selector) {
 
 const footer = `
     <div class="footer__content row">
-        <p class="content__about-us"><strong>Sobre nós: </strong>Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa. Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa. Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa.</p>
+        <div class="content__left">
+            <img src="./assets/logo-work-sweet-home.png" alt="logo da work sweet work">
+            <p class="content__about-us"><strong>Sobre nós: </strong>Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa. Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa. Lugar separado para falar qualquer coisa que pode entrar aqui e tudo mais de bom e bla, e talves a nossa empresa.</p>
+        </div>
         <div class="content__right">
             <div class="content__social-media">
                 <p><strong>SIGA-NOS NAS REDES SOCIAIS</strong></p>
