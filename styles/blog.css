@@ -20,6 +20,11 @@
     padding: 0;
     padding-bottom: 0;
 }
+
+.body .body__content .content__box .box__img:hover {
+    opacity: .8;
+}
+
 .body .body__content .content__box .box__img img{
     width: 100%;
 }
@@ -51,8 +56,11 @@
 a{
     color: transparent;
     text-decoration: none;
+    transition: 0.5s;
 }
-
+a:hover{
+    transform: scale(1.01);
+}
 
 
 @media (max-width: 600px) {
