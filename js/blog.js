@@ -77,7 +77,7 @@ const cards = [
         },
         article: {
             title: "Viajar e Trabalhar ao Mesmo Tempo?",
-            subtitle: "Uma moça feliz indo viajar com seu computador",
+            subtitle: "É possivel?",
             description:
                 "É o sonho de muitos trabalhar de onde quiserem. Enquanto beber um coquetel de coco embaixo de uma palmeira e digitar no seu laptop pode ser logicamente improvável (teclado cheio de areia?), existem maneiras de escapar da vida cotidiana e continuar trabalhando em...",
             author: "Agathe 15/12"
@@ -98,6 +98,21 @@ const cards = [
             author: "Agathe 15/12"
         },
         href: "./artigos/home-office-ou-coworking.html"
+    },
+    {
+        img: {
+            src:
+                "https://cdn.discordapp.com/attachments/545125933267550219/670077309159473162/equipe-olhando-o-celular.png",
+            alt: "Equipe olhando o celular"
+        },
+        article: {
+            title: "As tendências para coworkings",
+            subtitle: "O que esperar dessa crescente comunidade?",
+            description:
+                "Principalmente devido à onda de Transformação Digital que está acontecendo no mercado, é possível acompanhar um crescente movimento na comunidade de coworking. Os coworking são espaços compartilhados de trabalho que, além de visar a troca de experiências...",
+            author: "Agathe 15/12"
+        },
+        href: "./artigos/as-tendencias-para-coworkings.html"
     }
 ];
 
