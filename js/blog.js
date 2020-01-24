@@ -26,7 +26,7 @@ function cardTemplate(card) {
 const cards = [
     {
         img: {
-            src: "./assets/artigos/digital-nomade.png",
+            src: "https://cdn.discordapp.com/attachments/545125933267550219/669590275571580946/digital-nomade.png",
             alt: "Imagem de um nômade digital trabalhando"
         },
         article: {
@@ -40,7 +40,7 @@ const cards = [
     },
     {
         img: {
-            src: "./assets/artigos/empreendedores-e-coworking.png",
+            src: "https://cdn.discordapp.com/attachments/545125933267550219/669590278444810261/empreendedores-e-coworking.png",
             alt: "Empreendedores trabalhando em um coworking"
         },
         article: {
@@ -54,7 +54,7 @@ const cards = [
     },
     {
         img: {
-            src: "./assets/artigos/investimento-sustentavel.png",
+            src: "https://cdn.discordapp.com/attachments/545125933267550219/669590279249985536/investimento-sustentavel.png",
             alt: "Imagem de pessoas felizes trabalhando em equipe"
         },
         article: {
@@ -68,7 +68,7 @@ const cards = [
     },
     {
         img: {
-            src: "./assets/artigos/viajar-e-trabalhar.png",
+            src: "https://cdn.discordapp.com/attachments/545125933267550219/669590791127302154/viajar-e-trabalhar.png",
             alt: "Imagem a ser exibida"
         },
         article: {
@@ -82,7 +82,7 @@ const cards = [
     },
     {
         img: {
-            src: "./assets/artigos/home-office.png",
+            src: "https://cdn.discordapp.com/attachments/545125933267550219/669590277652217896/home-office.png",
             alt: "Uma mesa com café e computadores"
         },
         article: {
